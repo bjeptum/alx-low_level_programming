@@ -1,6 +1,11 @@
 #include <stdio.h>
 
 /**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+/**
  ** *put  - Prints a string exactly followed by a new line.
  * * *
  (**)
