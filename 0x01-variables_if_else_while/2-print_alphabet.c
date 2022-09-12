@@ -5,9 +5,9 @@
  *
  * Return: 0 (Success)
  */
-int main (void)
+char main (void)
 {
-	int ch;
+       char ch;
 
 	for (ch = ‘a’; ch <= ‘z’; ch++)
 		putchar(ch);
