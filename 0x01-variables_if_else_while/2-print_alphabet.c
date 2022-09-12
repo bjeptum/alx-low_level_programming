@@ -5,12 +5,12 @@
  *
  * Return: 0 (Success)
  */
-int  main (void)
+int  main(void)
 {
-       char ch;
+	char ch;
 
 	for (ch = ‘a’; ch <= ‘z’; ch++)
 		putchar(ch);
 		putchar(‘\n’);
-	return(0);
+	return (0);
 }
