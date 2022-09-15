@@ -5,7 +5,7 @@
  *
  * Return: 0 exit)
  */
-int print_sign(int n);
+int print_sign(int n)
 {
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
