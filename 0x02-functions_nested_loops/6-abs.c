@@ -2,22 +2,21 @@
 
 /**
  * _abs - prints the absolute value of an integer
- * @i - integer to be inputted
- * 
+ * @n: integer to be inputted
  * Return: interger
  */
-int _abs(int i)
+int _abs(int n)
 {
-	if (i > 0)
+	if (n > 0)
 	{
-		return (i);
+		return (n);
 	}
-	else if (i < 0)
+	else if (n < 0)
 	{
-		return (-i);
+		return (-n);
 	}
 	else
 	{
-		return (i)
+		return (n);
 	}
 }
