@@ -5,15 +5,13 @@
  *
  * Return: 0 (Exit)
  */
-int _islower(void)
+int _islower(int c)
 {
 	int c;
-
-	if ((_islower(c))
-			{
-			_putchar(1);
-			else
-			_putchar(0);
-			}
-			return (0);
+	
+	if (c >= 97 && c <=122)
+	{
+	return (1);
+	}
+	return (0);
 }
