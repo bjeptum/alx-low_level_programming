@@ -5,7 +5,7 @@
  *
  * Return: 0 (Exit)
  */
-int _islower(void)
+int _islower (void)
 {
 	int c;
 
