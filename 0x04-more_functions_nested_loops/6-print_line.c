@@ -4,7 +4,7 @@
  * @n: parameters for a function
  * Return: 0
  */
-void print_line(int n);
+void print_line(int n)
 {
 	int a = 0;
 
