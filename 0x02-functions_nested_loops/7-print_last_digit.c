@@ -12,7 +12,7 @@ int print_last_digit(int a)
 
 	if (a < 10)
 	{
-		c = ((10 - (a % 10));
+		c = (10 - (a % 10);
 		_putchar(c);
 	}
 	else
@@ -20,5 +20,4 @@ int print_last_digit(int a)
 	c = (a % 10);
 	_putchar(c);
 	}
-	return (0);
 }
