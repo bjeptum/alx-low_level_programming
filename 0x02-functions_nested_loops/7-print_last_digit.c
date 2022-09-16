@@ -6,7 +6,7 @@
  *
  * Return: 0 (exit)
  */
-int print_last_digit(int);
+int print_last_digit(int)
 {
 	int digit;
 
