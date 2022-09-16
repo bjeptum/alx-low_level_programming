@@ -9,6 +9,7 @@ void print_most_numbers(void)
 	int n;
 
 	for (n = 0; n < 10; n++)
+	{
 		if (n != 2 && n != 4)
 		{
 			putchar(n + '0');
@@ -17,5 +18,6 @@ void print_most_numbers(void)
 		{
 			break;
 		}
+	}
 	_putchar('\n');
 }
