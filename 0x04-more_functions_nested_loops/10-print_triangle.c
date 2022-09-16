@@ -4,7 +4,7 @@
  * @size: parameters for the different sides of a triangle
  * Return: 0 Always
  */
-void print_triangle(int size);
+void print_triangle(int size)
 {
 	int x, y = 0;
 	int space;
