@@ -10,7 +10,7 @@ void print_line(int n)
 
 	if (n > 0)
 	{
-		while (a >= n)
+		while (a <= n)
 		{
 			_putchar('_');
 			a++;
@@ -18,5 +18,5 @@ void print_line(int n)
 		_putchar('\n');
 	}
 	else
-	_putchar('\n');
+		_putchar('\n');
 }
