@@ -4,13 +4,12 @@
  * @a: first integer to be inputted
  * @b: second integer to be inputted
  *
- * Return: Always 0
+ * Return: r the result of multipilication
  */
 int mul(int a, int b)
 {
 	int r;
 
-	r = a * b;
-	_putchar(r);
-	return (0);
+	r = (a * b);
+	return (r);
 }
