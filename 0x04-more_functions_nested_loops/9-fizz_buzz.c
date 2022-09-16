@@ -8,7 +8,7 @@ int main(void)
 {
 	int i;
 
-	for (i >= 1 || i <= 100;)
+	for (i >= 1 || i <= 100; i++)
 	{
 		if ((i % 15) == 0)
 			printf("FizzBuzz\t");
@@ -18,7 +18,6 @@ int main(void)
 			printf("Buzz\t");
 		else
 			printf("%d\t", i);
-	i++
 	}
 	return (0);
 }
