@@ -4,7 +4,7 @@
  * @n: number of times the '\' char is printed
  *
  */
-void print_diagonal(int n);
+void print_diagonal(int n)
 {
 	int c = 0;
 	int i = 0;
