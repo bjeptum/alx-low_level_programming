@@ -9,9 +9,11 @@ void puts2(char *str)
 {
 	int i;
 
-	for (int i = 0; i < _strlen(str); i += 2)
+	_strlen(str) = y;
+
+	for (i = 0; i < y; i += 2)
 	{
-		putchar(str[i]);
+		_putchar(str[i]);
 	}
 	return (0);
 }
