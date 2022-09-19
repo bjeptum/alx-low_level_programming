@@ -6,7 +6,5 @@
  */
 void reset_to_98(int *n)
 {
-	int *ptr_int;
-
-	*ptr_int = 98;
+	int *n = 98
 }
