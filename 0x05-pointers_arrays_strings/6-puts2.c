@@ -3,11 +3,11 @@
  * puts2 - prints every other character of a string
  * @str: string to be inputted
  *
- * Return: string characters
  */
 void puts2(char *str)
 {
 	int i;
+	int y;
 
 	_strlen(str) = y;
 
@@ -15,5 +15,4 @@ void puts2(char *str)
 	{
 		_putchar(str[i]);
 	}
-	return (0);
 }
