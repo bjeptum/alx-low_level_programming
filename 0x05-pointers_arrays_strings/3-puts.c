@@ -1,18 +1,15 @@
 #include "main.h"
 /**
  * _puts - prints a string
- * @str: stirng to be inputted
+ * @str: string to be inputted
  *
- * Return: always 0
+ * Return: a string and a new line
  */
 void _puts(char *str)
 {
-	char *t = *str
-
-	while (*t != '\0')
+	for (; *str != '\0'; str++)
 	{
-		_putchar(*t);
-		t++;
+		_putchar(*str);
 	}
 	_putchar('\n');
-	return (0);
+}
