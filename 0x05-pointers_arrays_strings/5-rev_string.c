@@ -6,9 +6,9 @@
 void rev_string(char *s)
 {
 	int y, i, m;
-	char *end, temp;
+	char *a, d;
 
-	end = s;
+	a = s;
 
 	while (s[y] != '\0')
 	{
@@ -16,13 +16,13 @@ void rev_string(char *s)
 	}
 	for (m = 1; m < y; m++)
 	{
-		end++;
+		a++;
 	}
 	for (i = 0; i < (y / 2); i++)
 	{
-		temp = s[i];
-		s[i] = *end;
-		*end = temp;
-		end--;
+		d = s[i];
+		s[i] = *d;
+		*a = d;
+		a--;
 	}
 }
