@@ -7,23 +7,29 @@
 void print_chessboard(char (*a)[8])
 {
 	int i, j;
+	int rows;
+	int cols;
+	k = 1;
 
-	for (i = 0; i < 8; i++)
-		for (j = 0; j < 8; j++)
-			board[i][j] = empty;
-	for (i = 0; i < 8; i++)
-		board[1][i] = board[6][i] = p;
-		board[0][0] = board[0][7] = board[7][0] = board[7][7] = r;
-		board[0][1] = board[0][6] = board[7][1] = board[7][6] = k;
-		board[0][2] = board[0][6] = board[7][2] = board[7][5] = b;
-		board[0][3] = board[7][3] = q;
-		board[0][4] = board[7][4] = k;
-};
-{
-	for (row = 0; row < 8; row++)
+	for (i = 1; i <= rows; i++)
 	{
-		for (col = 0; col < 8; col++)
-			putchar(reps[board[row][col]);
-		putchar('\n');
+		for (j = 1; j <= cols; j++)
+		{
+			if (k == 1)
+			{
+				_putchar(*a);
+			}
+			else
+			{
+				_putchar(" ");
+			       k += -1;
+			}
+			if (cols % 2 == 0)
+			{
+				k *= -1;
+			}
+			_putchar('\n');
+		}
+		return (0);
 	}
 }
