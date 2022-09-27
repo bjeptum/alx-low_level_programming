@@ -14,7 +14,5 @@ char *_strstr(char *haystack, char *needle)
 		else
 			return (needle);
 	}
-	if (*needle == '\0')
-		return (haystack);
 	return (NULL);
 }
