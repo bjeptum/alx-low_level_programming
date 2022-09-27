@@ -8,18 +8,21 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int len;
-
-	len = 0;
 	int i;
 	int j;
 
-	if ((s == NULL) || (accept == NULL))
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		return len;
+		if (s[i] != 32)
+		{
+			for (j = 0; accept[j] != '\0'; j++)
+			{
+				if (s[i] == accept[j])
+					len++;
+			}
+		}
+		else
+			return (len);
 	}
-	while (*s && _strchr(*accept, s++))
-	{
-		len++;
-	}
-	return len;
+	return (len);
 }
