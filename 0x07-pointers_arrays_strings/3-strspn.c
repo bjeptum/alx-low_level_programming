@@ -6,24 +6,23 @@
  * Return: length of string
  */
 unsigned int _strspn(char *s, char *accept)
-	unsigned int _strspn(char *s, char *accept)
 {
-		unsigned int len;
-			int i;
-				int j;
+	int i;
+	int j;
+	int y = 0;
 
-					for (i = 0; s[i] != '\0'; i++)
-							{
-										if (s[i] != 32)
-													{
-																	for (j = 0; accept[j] != '\0'; j++)
-																					{
-																										if (s[i] == accept[j])
-																																len++;
-																													}
-																			}
-												else
-																return (len);
-													}
-						return (len);
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (s[i] != 32)
+		{
+			for (j = 0; accept[j] != '\0'; j++)
+			{
+				if (s[i] == accept[j])
+					y++;
+			}
+		}
+		else
+			return (y);
+	}
+	return (y);
 }
