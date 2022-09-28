@@ -13,7 +13,7 @@ int _sqrt_recursion(int n)
 	}
 	else if (n != 0)
 	{
-		return (n * _sqrt_recursion(n, 0.5 + 1));
+		return (n * _pow_recursion(n, 0.5 + 1));
 	}
 	return (1);
 }
