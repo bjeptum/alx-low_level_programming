@@ -1,17 +1,18 @@
 #include "lists.h"
 
 /**
-* _strlen - returns the length of a string
-* @s: string inputted
-* Return: length of string
+* _strlen - gets length of the string
+* @s: string
+* Return: length of the string
 */
 int _strlen(const char *s)
 {
-	int y;
-
-	for (y = 0; s[y]; y++)
-		return (y);
+	int i;
+	for (i = 0; s[i]; i++)
+		;
+	return (i);
 }
+
 /**
 * *add_node - pointer to function add node
 * @head: start of list_t
