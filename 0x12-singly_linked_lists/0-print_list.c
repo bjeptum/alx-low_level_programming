@@ -1,9 +1,9 @@
 #include "lists.h"
  
 /*
- * print_list - prints all the elements of a list
- * @list_t: sruct of type constant
- * @h: pointer to variable elements of t
+ * print_list - prints all the elements of a list_t list
+ * @h: pointer to variable elements of list
+ * Return: number of nodes
  */
 size_t print_list(const list_t *h)
 {
@@ -14,7 +14,7 @@ size_t print_list(const list_t *h)
 	while (ptr != NULL)
 	{
 		if (ptr->str != NULL)
-			printf("[%d] %s\n", ptr->len, ptr->str);
+			printf("[%u] %s\n", ptr->len, ptr->str);
 		else
 			printf("[0] (nil)\n");
 		len++;
