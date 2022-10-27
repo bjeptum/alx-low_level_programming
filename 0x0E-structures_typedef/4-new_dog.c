@@ -13,16 +13,17 @@ dog_t *new_dog(char *name, float age, char *owner)
 	/* reserve memory to struct */
 	d = malloc(sizeof(dog_t));
 	if (d == NULL)
-		return (NULL);
-	if (name == NULL)
 	{
 		free(d);
+		return (NULL);
+	}
+	if (name == NULL)
+	{
 		free(owner);
 		return (NULL);
 	}
 	if (owner == NULL)
 	{
-		free(d);
 		free(name);
 		return (NULL);
 	}
