@@ -11,7 +11,7 @@
  - What are the most common / useful rules
  - What are variables and how to set and use them
 
-### The description of the rules and variables is as follows:
+### The description of the rules and variables used in the files to complete the project is as follows:
 
 A. Rules
 | Rule | Description |
