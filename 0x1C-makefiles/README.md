@@ -23,11 +23,11 @@ A. Rules
 |re | Forces recompilation of all source files |
 
 B. Variables
-|Variable |Description |
-|........ |........... |
-|CC | The compiler to be used |
-|SRC | The .c files |
-|OBJ | The .o files |
-|NAME | The name of the executable |
-|RM | The program to delete files |
-|CFLAGS | Compiler flags: -Wall -Werror -Wextra -pedantic |
+| Variable  | Description |
+| ------------- | ------------- |
+| CC | The compiler to be used |
+| SRC | The .c files |
+| OBJ | The .o files |
+| NAME | The name of the executable |
+| RM | The program to delete files |
+| CFLAGS | Compiler flags: -Wall -Werror -Wextra -pedantic |
