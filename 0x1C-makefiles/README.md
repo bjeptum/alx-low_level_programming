@@ -15,6 +15,7 @@
 
 A. Rules
 |Rule| Description|
+|......|...........|
 |all| Builds the executable|
 |clean| Deletes all Emacs and Vim temporary files along with the executable|
 |oclean| Deletes the object files|
@@ -23,6 +24,7 @@ A. Rules
 
 B. Variables
 |Variable|Description|
+|........|...........|
 |CC| The compiler to be used|
 |SRC| The .c files|
 |OBJ| The .o files|
