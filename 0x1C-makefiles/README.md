@@ -3,7 +3,7 @@
  This project entails introductory concepts to Makefiles.
 
 
- # *Learning Objectives*:
+ ### *Learning Objectives*:
  - What are make, Makefiles
  - When, why and how to use Makefiles
  - What are rules and how to set and use them
@@ -11,7 +11,7 @@
  - What are the most common / useful rules
  - What are variables and how to set and use them
 
-# The description of the rules and variables is as follows:
+### The description of the rules and variables is as follows:
 
 A. Rules
 |Rule| Description|
@@ -26,6 +26,6 @@ B. Variables
 |CC| The compiler to be used|
 |SRC| The .c files|
 |OBJ| The .o files|
-|NAME: the name of the executable
-RM: the program to delete files
-CFLAGS: your favorite compiler flags: -Wall -Werror -Wextra -pedantic||
+|NAME| The name of the executable|
+|RM| The program to delete files|
+|CFLAGS| Compiler flags: -Wall -Werror -Wextra -pedantic||
