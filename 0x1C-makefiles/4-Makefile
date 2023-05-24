@@ -18,7 +18,8 @@ $(NAME): $(OBJ)
 clean:
 	$(RM) $(OBJ) $(NAME)
 
-oclean: $(RM) $(OBJ)
+oclean: 
+	$(RM) $(OBJ)
 
 fclean:
 	clean
