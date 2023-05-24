@@ -8,6 +8,7 @@ NAME= school
 RM= rm -f *~
 
 all: $(NAME)
+	re
 
 $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
