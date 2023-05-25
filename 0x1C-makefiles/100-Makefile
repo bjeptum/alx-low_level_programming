@@ -19,7 +19,7 @@ oclean:
 
 fclean: clean
 
-re: oclean all
+re: fclean all
 
 %.o: %.h
 
