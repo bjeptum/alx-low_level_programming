@@ -22,7 +22,6 @@ fclean:
 
 re: fclean all
 
-%.o: %.c
-	$(CC) $(CFLAGS) -c -o $@ $<
+%.o: %.h
 
-.PHONY: all, clean, oclean, fclean, re
+.PHONY: all,clean,oclean,fclean,re
