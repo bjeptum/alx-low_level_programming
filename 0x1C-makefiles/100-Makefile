@@ -12,15 +12,16 @@ $(NAME): $(OBJ)
         $(CC) -o $@ $^
 
 clean:
-	$(RM) *~ $(OBJ) $(NAME)
+	$(RM) *~ $(NAME)
 
 oclean:
 	$(RM) $(OBJ)
 
-fclean: clean
+fclean: clean oclean
 
-re: oclean all
+re: fclean all
 
-%.o: %.h
+%.o: %.c  m.h
+	$(CC) -c -o $@ $<
 
-.PHONY: all, clean, oclean, fclean, re
+.PHONY: all clean oclean fclean re
