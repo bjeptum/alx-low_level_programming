@@ -10,6 +10,8 @@ This project I covered the concept of  C-Static Libraries where I learnt:
 
 ### Files
 a) libmy.a: contains my functions from the alx-low-level programming in C
+
 b) main.h: contains allthe prototypes of my functions
+
 c) create_static_lib.sh: creates a static library called liball.a from all the .c files that are in the current directory
 
