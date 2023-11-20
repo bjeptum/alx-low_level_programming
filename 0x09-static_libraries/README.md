@@ -1,5 +1,5 @@
 ## C - Static libraries
-This project I covered the concept of  C-Static Libraries where I covered:
+This project I covered the concept of  C-Static Libraries where I learnt:
 - What a static libray is, how it works, how to create one, and how to use it.
 - Basic usage of ar,ranlib, nm
 
