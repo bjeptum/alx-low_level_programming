@@ -11,6 +11,11 @@ char *_strdup(char *str)
 	static char *cp;
 	char *cp_offset;
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
 	/* Allocate memory for duplicate */
 	str_size = strlen(str);
 	cp = (char *) malloc(sizeof(char) * str_size + 1);
