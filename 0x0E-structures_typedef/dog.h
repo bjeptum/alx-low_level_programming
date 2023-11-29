@@ -14,10 +14,7 @@ struct dog
 	char *owner;
 };
 /**
- * struct dog_t - new name for type struct dog
- * @name: member variable 1
- * @age: member variable 2
- * @owner: member variable 3
+ * dog_t - new name for type struct dog
  */
 typedef struct dog dog_t;
 
