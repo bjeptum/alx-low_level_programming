@@ -17,7 +17,7 @@ void print_all(const char * const format, ...)
 
 	while (format && format[i])
 	{
-		if (separator)
+		if (separator && format[i - 1] != '\0')
 			printf(", ");
 		switch (format[i])
 		{
@@ -34,17 +34,11 @@ void print_all(const char * const format, ...)
 				break;
 			case 's':
 				str = va_arg(argList, char*);
-				if (str == NULL)
-					printf("(nil)");
-				else
-					printf("%s", str);
+				(str != NULL) ? printf("%s", str) : printf("(nil)");
 				break;
-			default:
-				i++;
-				continue;
 		}
-		separator = 1;
 		i++;
+		separator = 1;
 	}
 	printf("\n");
 	va_end(argList);
