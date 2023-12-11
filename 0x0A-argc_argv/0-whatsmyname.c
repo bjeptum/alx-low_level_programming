@@ -17,5 +17,5 @@ int main(int argc, char *argv[])
 	{
 		fprintf(stderr, "Error:No arguments.\n");
 		return (1);
-	}	
+	}
 }
