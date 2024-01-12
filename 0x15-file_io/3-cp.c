@@ -1,4 +1,5 @@
 #include "main.h"
+#define BUF_SIZE 1024
 /**
  * main - copy contents of one file to another
  * @argc: count of inputted arguments
@@ -8,9 +9,9 @@
  */
 int main(int argc, char **argv)
 {
-	FILE *file_from;
-	FILE *file_to;
+	FILE *file_from, *file_to;
 	int c;
+	struct stat st;
 
 	if (argc != 3)
 	{
@@ -30,9 +31,7 @@ int main(int argc, char **argv)
 		exit(99);
 	}
 	while ((c = fgetc(file_from)) != EOF)
-	{
 		fputc(c, file_to);
-	}
 	if (fclose(file_from) == EOF)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fileno(file_from));
@@ -41,6 +40,12 @@ int main(int argc, char **argv)
 	if (fclose(file_to) == EOF)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fileno(file_to));
+		exit(100);
+	}
+	stat(argv[1], &st);
+	if (chmod(argv[2], st.st_mode) == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't change permissions for %s\n", argv[2]);
 		exit(100);
 	}
 	return (0);
