@@ -29,8 +29,7 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
-	c = fgetc(file_from);
-	while (c != EOF)
+	while ((c = fgetc(file_from)) != EOF)
 	{
 		fputc(c, file_to);
 	}
