@@ -17,10 +17,10 @@ clean:
 oclean:
 	$(RM) $(OBJ)
 
-fclean: clean
+fclean: clean oclean
 
 re: oclean all
 
-%.o: %.h
+$(OBJ): m.h
 
 .PHONY: all, clean, oclean, fclean, re
